@@ -16,6 +16,13 @@ Sigue estos pasos para clonar y usar esta configuración en tu máquina:
 
    Abre una terminal y ejecuta el siguiente comando para clonar el repositorio en tu directorio de configuración de Neovim:
 
+- Por SSH
+
+   ```sh
+   git clone git@github.com:Z0SO/zosoConfig.git ~/.config/nvim
+   ```
+
+- Por HTTPS
    ```sh
    git clone https://github.com/Z0SO/zosoConfig.git ~/.config/nvim
    ```
