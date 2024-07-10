@@ -1,4 +1,4 @@
--- init.lua
+-- ~/.config/nvim/init.lua
 
 -- Variables globales
 vim.g.mapleader = " "
@@ -13,4 +13,5 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Cargar configuraciones modulares
 require('settings')  -- Opciones básicas de Neovim
-require('plugins')   -- Configuración de plugins
+
+require('init')   -- Cargar configuración de plugins desde lua/plugins.lua
