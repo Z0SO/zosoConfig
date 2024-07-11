@@ -6,7 +6,6 @@ return {
     -- Configurar el tema
     vim.cmd([[
       syntax enable
-      set background=dark
       colorscheme gotham
     ]])
   end

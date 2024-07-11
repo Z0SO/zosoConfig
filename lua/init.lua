@@ -2,7 +2,8 @@
 
 -- Configuración de plugins
 require("lazy").setup({
-  { import = "plugins.copilot" },
-  { import = "plugins.gotham" },
-  -- Agrega más plugins aquí
+
+    { import = "plugins" }, -- Carga de plugins
+
+    -- Agrega más plugins aquí
 })
