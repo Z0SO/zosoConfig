@@ -50,6 +50,8 @@ return {
         "query",
         "vimdoc",
         "c",
+        "lua",
+        "python",
       },
       -- Configura la selección incremental
       incremental_selection = {
