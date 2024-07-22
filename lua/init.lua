@@ -4,6 +4,5 @@
 require("lazy").setup({
 
     { import = "plugins" }, -- Carga de plugins
-
     -- Agrega más plugins aquí
 })

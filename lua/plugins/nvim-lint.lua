@@ -14,7 +14,7 @@ return {
 			javascriptreact = { "eslint_d" }, -- Linter para archivos JavaScript React
 			typescriptreact = { "eslint_d" }, -- Linter para archivos TypeScript React
 			svelte = { "eslint_d" }, -- Linter para archivos Svelte
-			python = { "pylint" }, -- Linter para archivos Python
+			--python = { "pylint" }, -- Linter para archivos Python
 		}
 
 		-- Crear un grupo de autocmd para linting

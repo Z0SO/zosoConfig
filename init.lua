@@ -15,3 +15,26 @@ vim.opt.rtp:prepend(lazypath)
 require('settings')  -- Opciones básicas de Neovim
 
 require('init')   -- Cargar configuración de plugins desde lua/plugins.lua
+
+vim.opt.clipboard = "unnamedplus"  -- Copiar al portapapeles
+
+-- Configuración para Neovide
+if vim.g.neovide then
+  -- Atajos para aumentar y disminuir el zoom
+  vim.api.nvim_set_keymap('n', '<C-+>', ':lua vim.g.neovide_scale_factor = vim.g.neovide_scale_factor + 0.1<CR>', { noremap = true, silent = true })
+  vim.api.nvim_set_keymap('n', '<C-->', ':lua vim.g.neovide_scale_factor = vim.g.neovide_scale_factor - 0.1<CR>', { noremap = true, silent = true })
+
+  -- Valor inicial del factor de escala
+  vim.g.neovide_scale_factor = 1.0
+end
+
+
+
+-- Copiar al portapapeles
+vim.api.nvim_set_keymap('v', '<leader>y', '"+y', { noremap = true, silent = true })
+
+-- Pegar desde el portapapeles
+vim.api.nvim_set_keymap('n', '<leader>p', '"+p', { noremap = true, silent = true })
+
+
+
